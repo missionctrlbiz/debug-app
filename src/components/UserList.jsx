@@ -6,7 +6,7 @@ const UserList = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('http://dummyjson.com/users')
+    fetch('https://dummyjson.com/users')
       .then(res => res.json())
       .then(data => setUsers(data.users)); 
   }, []);
